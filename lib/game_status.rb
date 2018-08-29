@@ -8,7 +8,7 @@ def won?(board)
   middle_row_win = [3,4,5]
 
   #if
-    board.include?(WIN_COMBINATIONS)
+    board.included_in?(WIN_COMBINATIONS)
 =begin
     if board[top_row_win[0]] == "X" && board[top_row_win[1]] == "X" && board[top_row_win[2]] == "X"
       return top_row_win
