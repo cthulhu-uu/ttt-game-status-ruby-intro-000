@@ -36,6 +36,12 @@ WIN_COMBINATIONS = [
 def full?(board)
   return true unless board.include?(" ")
 end
+
+def draw?(board)
+  if full?(board) != true && won?(board) != true
+    return false
+  end
+end
 =begin
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 top_row_win = [0,1,2]
