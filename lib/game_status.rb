@@ -51,3 +51,10 @@ def over?(board)
   return true while (draw?(board) || won?(board))
   return false
 end
+
+def winner(board)
+  if won?(board)[0]  == "X"
+    return "X"
+  end
+  return "O"
+end
