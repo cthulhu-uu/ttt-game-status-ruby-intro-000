@@ -34,7 +34,7 @@ WIN_COMBINATIONS = [
 ]
 
 def full?(board)
-  return false while board.includes?(" ")
+  return false while board.include?(" ")
 end
 =begin
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
