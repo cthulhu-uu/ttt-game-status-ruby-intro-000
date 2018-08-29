@@ -8,8 +8,8 @@ def won?(board)
   middle_row_win = [3,4,5]
 
   if board.included_in?(WIN_COMBINATIONS)
-    if board[top_row_win[0]] == "X" && board[top_row_win[1]] == "X" && board[top_row_win[2]] == "X"
-      return top_row_win
+    if board[WIN_COMBINATIONS[0][0]] == "X" && board[WIN_COMBINATIONS[0][1]] == "X" && board[WIN_COMBINATIONS[0][2]] == "X"
+      return WIN_COMBINATIONS[0]
     end
     if board[middle_row_win[3]] == "X" && board[middle_row_win[4]] == "X" && board[middle_row_win[5]] == "X"
       return middle_row_win
