@@ -4,16 +4,16 @@ def position_taken?(board, pos)
 end
 
 def won?(board)
-  top_row_win = [0,1,2]
-  middle_row_win = [3,4,5]
+  #top_row_win = [0,1,2]
+  #middle_row_win = [3,4,5]
 
   WIN_COMBINATIONS.each {|win|
     if board[win[0]] == "X" && board[win[1]] == "X" && board[win[2]] == "X"
       return win
     end
-    if board[middle_row_win[3]] == "X" && board[middle_row_win[4]] == "X" && board[middle_row_win[5]] == "X"
-      return middle_row_win
-    end
+    #if board[middle_row_win[3]] == "X" && board[middle_row_win[4]] == "X" && board[middle_row_win[5]] == "X"
+      #return middle_row_win
+    #end
   else
     return false
   end
