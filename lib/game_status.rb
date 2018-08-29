@@ -40,7 +40,10 @@ end
 def draw?(board)
   if full?(board) != true && won?(board) != true
     return false
+  else 
+    return true
   end
+  
 end
 =begin
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
