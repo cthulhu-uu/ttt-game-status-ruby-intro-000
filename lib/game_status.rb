@@ -33,7 +33,12 @@ WIN_COMBINATIONS = [
   [2,4,6] # diagonal two
 ]
 
-
+def full?(board)
+  board.each do |pos|
+    board[pos] != " "
+    return true
+  end
+end
 =begin
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 top_row_win = [0,1,2]
