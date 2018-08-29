@@ -38,35 +38,13 @@ def full?(board)
 end
 
 def draw?(board)
-  if full?(board) != true && won?(board) != true
+  if full?(board) != true || won?(board) != true
     return false
   else
     return true
   end
 
 end
-=begin
-board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
-top_row_win = [0,1,2]
-middle_row_win = [3,4,5]
 
-if board[top_row_win[0]] == "X" && board[top_row_win[1]] == "X" && board[top_row_win[2]] == "X"
-  "X won in the top row"
-end
 
-if board[middle_row_win[3]] == "X" && board[middle_row_win[4]] == "X" && board[middle_row_win[5]] == "X"
-    "X won in the middle row"
-end
-  if board[top_row_win[0]] == "X" && board[top_row_win[1]] == "X" && board[top_row_win[2]] == "X"
-    "X won in the top row"
-  end
-  if board[top_row_win[0]] == "X" && board[top_row_win[1]] == "X" && board[top_row_win[2]] == "X"
-    "X won in the top row"
-  end
-  if board[top_row_win[0]] == "X" && board[top_row_win[1]] == "X" && board[top_row_win[2]] == "X"
-    "X won in the top row"
-  end
-  if board[top_row_win[0]] == "X" && board[top_row_win[1]] == "X" && board[top_row_win[2]] == "X"
-    "X won in the top row"
-  end
-=end
+
