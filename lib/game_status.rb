@@ -12,7 +12,8 @@ def won?(board)
       return win
     #if board[middle_row_win[3]] == "X" && board[middle_row_win[4]] == "X" && board[middle_row_win[5]] == "X"
       #return middle_row_win
-    #end}
+    #end
+  }
     return false
   end
 
