@@ -34,10 +34,7 @@ WIN_COMBINATIONS = [
 ]
 
 def full?(board)
-  board.each do |pos|
-    board[pos] != " "
-    return true
-  end
+  return false while board.includes?(" ")
 end
 =begin
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
