@@ -7,9 +7,7 @@ def won?(board)
   top_row_win = [0,1,2]
   middle_row_win = [3,4,5]
 
-  #if
-    board.included_in?(WIN_COMBINATIONS)
-=begin
+  if board.included_in?(WIN_COMBINATIONS)
     if board[top_row_win[0]] == "X" && board[top_row_win[1]] == "X" && board[top_row_win[2]] == "X"
       return top_row_win
     end
@@ -19,7 +17,6 @@ def won?(board)
   else
     return false
   end
-=end
 end
 
 # Define your WIN_COMBINATIONS constant
