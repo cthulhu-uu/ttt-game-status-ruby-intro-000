@@ -43,6 +43,7 @@ def draw?(board)
   elsif won?(board)
    return false
  elsif full?(board) && !won?(board)
+   return true
   end
 
 end
